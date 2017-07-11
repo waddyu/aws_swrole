@@ -90,7 +90,7 @@ function aws_swrole -d "Switch AWS IAM Roles and start new session."
   if [ $out_exports ]
     echo "set -x AWS_ACCESS_KEY_ID $access_key"
     echo "set -x AWS_SECRET_ACCESS_KEY $secret_key"
-    echo "set -x export AWS_SESSION_TOKEN $sess_token"
+    echo "set -x AWS_SESSION_TOKEN $sess_token"
   else
     set -x AWS_COLOR $color
     set -x SWITCH_TARGET $dest_aws
